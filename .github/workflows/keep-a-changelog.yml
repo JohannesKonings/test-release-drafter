@@ -12,17 +12,18 @@ jobs:
     - name: Update changelog
       uses: thomaseizinger/keep-a-changelog-new-release@v1
       with:
-        version: 0.6.0 # You probably want to have this dynamic :)
+        version: ${GITHUB_REF}
         
     - name: push changelog.md
       run: |
         git status
         git diff CHANGELOG.md
         git describe --tags
-        git checkout main
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git config --global user.name "github-actions[bot]"
+        git switch -c update-changelog
         git add CHANGELOG.md
         git commit -m "CHANGELOG.md updated"
         git push
+        git branch -d update-changelog
       working-directory: ./
