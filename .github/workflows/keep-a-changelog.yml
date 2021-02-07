@@ -12,7 +12,7 @@ jobs:
     - name: Update changelog
       uses: thomaseizinger/keep-a-changelog-new-release@v1
       with:
-        version: ${GITHUB_REF}
+        version: $GITHUB_REF
         
     - name: push changelog.md
       run: |
@@ -24,6 +24,6 @@ jobs:
         git switch -c update-changelog
         git add CHANGELOG.md
         git commit -m "CHANGELOG.md updated"
-        git push
+        git push --set-upstream origin update-changelog
         git branch -d update-changelog
       working-directory: ./
