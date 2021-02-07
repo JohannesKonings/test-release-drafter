@@ -17,6 +17,7 @@ jobs:
     - name: push changelog.md
       run: |
         git status
+        git diff CHANGELOG.md
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git config --global user.name "github-actions[bot]"
         git add CHANGELOG.md
