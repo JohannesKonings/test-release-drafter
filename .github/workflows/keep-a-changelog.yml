@@ -19,7 +19,7 @@ jobs:
         git status
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git config --global user.name "github-actions[bot]"
-        git CHANGELOG.md
+        git add CHANGELOG.md
         git commit -m "CHANGELOG.md updated"
         git push
       working-directory: ./
