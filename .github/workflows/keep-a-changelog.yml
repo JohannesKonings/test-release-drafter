@@ -1,0 +1,15 @@
+name: "keep a changelog"
+on:
+  release:
+    types: [published]
+
+jobs:
+  update-changelog:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Update changelog
+      uses: thomaseizinger/keep-a-changelog-new-release@v1
+      with:
+        version: 0.6.0 # You probably want to have this dynamic :)
