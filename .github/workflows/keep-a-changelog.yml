@@ -12,7 +12,7 @@ jobs:
     - name: Update changelog
       uses: thomaseizinger/keep-a-changelog-new-release@v1
       with:
-        version: ${{ GITHUB_REF }}
+        version: ${GITHUB_REF#refs/tags/}
         
     - name: push changelog.md
       run: |
