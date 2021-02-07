@@ -9,17 +9,21 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     
+    - name: Get the version
+      id: get_version
+      run: echo ::set-output name=VERSION::${GITHUB_REF#refs/tags/}
+    
     - name: Update changelog
       uses: thomaseizinger/keep-a-changelog-new-release@v1
       with:
-        version: ${GITHUB_REF#refs/tags/}
+        version: ${{ steps.get_version.outputs.VERSION }}
         
     - name: push changelog.md
       run: |
+        echo ${GITHUB_REF#refs/tags/}
         git fetch
         git status
         git diff CHANGELOG.md
-        git describe --tags
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git config --global user.name "github-actions[bot]"
         git switch main
