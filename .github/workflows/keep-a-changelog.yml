@@ -11,6 +11,8 @@ jobs:
     
     - name: Update changelog
       uses: thomaseizinger/keep-a-changelog-new-release@v1
+      with:
+        version: 0.6.0 # You probably want to have this dynamic :)
         
     - name: push changelog.md
       run: |
