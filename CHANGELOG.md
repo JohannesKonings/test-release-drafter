@@ -15,4 +15,3 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 [v5.1.13]: https://github.com/JohannesKonings/test-release-drafter/compare/${GITHUB_REF#refs/tags/}...v5.1.13
 
-[${GITHUB_REF#refs/tags/}]: https://github.com/JohannesKonings/test-release-drafter/compare/e5bc6379397fed4deaf02542534cfb87c2ef4920...${GITHUB_REF#refs/tags/}
