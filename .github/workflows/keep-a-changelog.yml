@@ -11,8 +11,9 @@ jobs:
     
     - name: Update changelog
       run: |
-        npm -g install github-release-notes
-        gren changelog --override --token=${{ secrets.GITHUB_TOKEN }}
+        npm install github-release-notes
+        export GREN_GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
+        npm overrideChangelog
 
         
     - name: push changelog.md

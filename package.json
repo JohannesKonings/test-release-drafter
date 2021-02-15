@@ -1,0 +1,23 @@
+{
+  "name": "test-release-drafter",
+  "version": "1.0.0",
+  "description": "- 1.5.0\r - 2.0.0 with labels\r - 3.0.0\r - 4.0.0\r - 5.0.0\r - 6.0.0",
+  "main": "index.js",
+  "scripts": {
+    "overrideChangelog": "gren changelog --override",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohannesKonings/test-release-drafter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohannesKonings/test-release-drafter/issues"
+  },
+  "homepage": "https://github.com/JohannesKonings/test-release-drafter#readme",
+  "dependencies": {
+    "github-release-notes": "^0.17.3"
+  }
+}
