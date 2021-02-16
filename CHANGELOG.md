@@ -1,5 +1,35 @@
 # Changelog
 
+## v6.0.3 🌈 (16/02/2021)
+## Changes
+
+- Update README.md @JohannesKonings (#33)
+
+---
+
+## v6.0.2 🌈 (16/02/2021)
+## Changes
+
+- Update README.md @JohannesKonings (#32)
+
+---
+
+## v6.0.1 🌈 (16/02/2021)
+## Changes
+
+- Update README.md @JohannesKonings (#31)
+
+---
+
+## v6.0.0 🌈 (16/02/2021)
+## Changes
+
+- Update README.md @JohannesKonings (#30)
+- Update README.md @JohannesKonings (#29)
+- Update README.md @JohannesKonings (#28)
+
+---
+
 ## v5.1.19 🌈 (15/02/2021)
 ## Changes
 
