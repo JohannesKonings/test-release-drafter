@@ -27,5 +27,5 @@ jobs:
         git checkout -b changelog
         git add CHANGELOG.md
         git commit -m "CHANGELOG.md updated"
-        git push -u changelog
+        git push -u origin changelog
       working-directory: ./
