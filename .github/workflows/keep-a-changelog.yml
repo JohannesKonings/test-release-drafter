@@ -24,8 +24,8 @@ jobs:
         git diff CHANGELOG.md
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git config --global user.name "github-actions[bot]"
-        git switch main
+        git checkout -b changelog
         git add CHANGELOG.md
         git commit -m "CHANGELOG.md updated"
-        git push
+        git push -u changelog
       working-directory: ./
